@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,11 +27,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ClerkProvider>
+
       <body
         className={`${inter.className} bg-dark-2`}
-      >
+        >
         {children}
       </body>
+      </ClerkProvider>
     </html>
   );
 }
