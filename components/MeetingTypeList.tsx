@@ -156,7 +156,7 @@ const MeetingTypeList = () => {
               className="text-center"
               buttonText="Join Meeting"
               handleClick={() => router.push(values.link)}
-
+                buttonIcon={""}   
               >
 
                 <Input
