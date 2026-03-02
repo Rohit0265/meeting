@@ -152,7 +152,7 @@ const MeetingTypeList = () => {
             <Meetingmodel 
               isOpen={meeting === 'isJoiningMeeting'}
               onClose={() => setMeeting(undefined)}
-              title="SType the link here"
+              title="Type the link here"
               className="text-center"
               buttonText="Join Meeting"
               handleClick={() => router.push(values.link)}
